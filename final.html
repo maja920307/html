@@ -1,0 +1,284 @@
+<html>
+    <head><title>明新科技大學資訊管理系</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            /*font-size: 50px;*/
+            /*text-align:center;*/
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            //border:1px solid red;
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #111; 
+        }
+         .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+       .slider{
+            background-color: black;
+        }
+        .banner{
+            background-image: linear-gradient(#3204c7,#5599FF);
+            padding:30px;
+        }
+        .banner h2{
+            padding: 10px;
+            color:White;
+        }
+        .banner h4{
+            padding: 5px;
+            color:White;
+        }
+        
+        
+         .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*border:1px solid red;*/
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 480px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+                color: White;
+                background-color: rgba(39,40,34,.500);
+                text-align: center;           
+        }
+         .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+                color: rgb(54, 82, 110);
+                font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(39,40,34,0.50);
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+         <div class="top">
+            <div class="container">
+                <div class="logo">
+                   <img src="https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-logo-01-cht-15oct21?$native$">
+                       <hr>Genshin Impact
+                </div>
+                <div class="top-nav">
+                  <a href=>前往未知的冒險旅程</a>
+                  <hr>
+                  <a href=>登入帳號</a>
+                </div>
+              </div>
+        </div>
+       <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">遊戲簡介</a></li>
+                <li  class="dropdown"><a href="#faculty">角色簡介</a>
+                    <div class="dropdown-content">
+                        <a href="#">安柏</a>
+                        <a href="#">麗莎</a>
+                        <a href="#">凱亞</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+       <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://uploadstatic-sea.mihoyo.com/contentweb/20210812/2021081211445474445.jpg" /></li>
+                    <li><img src="https://uploadstatic-sea.mihoyo.com/contentweb/20210430/2021043014595161134.jpg" /></li>
+                    <li><img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211105/2021110514150019733.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h2>遊戲簡介</h2>
+            <h4>這裡是七種元素交匯的幻想世界「提瓦特」。</h4>
+            <h4>在遙遠的過去，人們藉由對神靈的信仰，獲賜了驅動元素的力量，得以在荒野中築起家園。</h4>
+            <h4>五百年前，古國的覆滅卻使得天地變異…</h4>
+            <h4>如今，席捲大陸的災難已經停息，和平卻仍未如期光臨。</h4>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>角色介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://patchwiki.biligame.com/images/ys/4/41/ifgwiipj3fb5xj434xw5wfppns9nmwu.png" />
+                    <h3>安柏</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://patchwiki.biligame.com/images/ys/d/d9/fcwrz8dboyblu8bqtg74m6ovqb02b48.png" />
+                    <h3>麗莎</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://patchwiki.biligame.com/images/ys/5/59/gz5kj9a1knmsrybn2rpdcz0xojt53v4.png" />
+                    <h3>凱亞</h3>
+                </a>        
+            </div>
+        </div>
+       <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>上海米哈遊影鐵科技有限公司</b>
+                        <span>上海市嘉定區銀翔路655號
+                        1幢11層1101室</span>
+                        <b>成立時間</b>
+                        <span>2019年02月26日</span>
+                        <b>遊戲作品</b>
+                        <span>《原神》</span>
+                        <span>《崩壞：星穹鐵道》</span>
+                        <span>《絕區零》</span>
+                        <span>《科契爾前線》</span>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.5084243305755!2d121.31970131509983!3d31.28968998144655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b268e36c48e4b7%3A0xd4e743b274e7f9b3!2z5Lit5ZyL5LiK5rW35biC5ZiJ5a6a5Yy66ZO257-U6LevNjU15Y-3IOmCruaUv-e8lueggTogMjAxODAy!5e0!3m2!1szh-TW!2stw!4v1672810752722!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 林建宏
+        </div>
+     </body>
+</html>
